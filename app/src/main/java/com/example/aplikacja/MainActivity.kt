@@ -6,6 +6,9 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,25 +17,50 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        findViewById<Button>(R.id.b0).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "0 "
         }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
+        findViewById<Button>(R.id.b1).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "1 "
+        }
+        findViewById<Button>(R.id.b2).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "2 "
+        }
+        findViewById<Button>(R.id.b3).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "3 "
+        }
+        findViewById<Button>(R.id.b4).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "4 "
+        }
+        findViewById<Button>(R.id.b5).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "5 "
+        }
+        findViewById<Button>(R.id.b6).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "6 "
+        }
+        findViewById<Button>(R.id.b7).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "7 "
+        }
+        findViewById<Button>(R.id.b8).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "8 "
+        }
+        findViewById<Button>(R.id.b9).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "9 "
+        }
+        findViewById<Button>(R.id.dodaj).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "+ "
+        }
+        findViewById<Button>(R.id.odejmij).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "- "
+        }
+        findViewById<Button>(R.id.podziel).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "÷ "
+        }
+        findViewById<Button>(R.id.podziel).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "x ";
+        }
+        findViewById<Button>(R.id.wynik).setOnClickListener {
+            findViewById<TextView>(R.id.rownanie).text = "= "
         }
     }
 }
