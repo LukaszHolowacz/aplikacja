@@ -16,51 +16,70 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
+        var liczbaPierwsza=0
+        var liczbaDruga=0
+        var wynik=0
+        findViewById<TextView>(R.id.rownanie).text =""
 
         findViewById<Button>(R.id.b0).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "0 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "0 "
         }
         findViewById<Button>(R.id.b1).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "1 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "1 "
         }
         findViewById<Button>(R.id.b2).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "2 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "2 "
         }
         findViewById<Button>(R.id.b3).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "3 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "3 "
         }
         findViewById<Button>(R.id.b4).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "4 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "4 "
         }
         findViewById<Button>(R.id.b5).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "5 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "5 "
         }
         findViewById<Button>(R.id.b6).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "6 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "6 "
         }
         findViewById<Button>(R.id.b7).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "7 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "7 "
         }
         findViewById<Button>(R.id.b8).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "8 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "8 "
         }
         findViewById<Button>(R.id.b9).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "9 "
+            findViewById<TextView>(R.id.rownanie).text =
+                findViewById<TextView>(R.id.rownanie).text.toString() + "9 "
         }
         findViewById<Button>(R.id.dodaj).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "+ "
+            liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
+            findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.odejmij).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "- "
+            liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
+            findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.podziel).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "÷ "
+            liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
+            findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.podziel).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "x ";
+            liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
+            findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.wynik).setOnClickListener {
-            findViewById<TextView>(R.id.rownanie).text = "= "
+            liczbaDruga = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
+            findViewById<TextView>(R.id.rownanie).text = ""
         }
     }
 }

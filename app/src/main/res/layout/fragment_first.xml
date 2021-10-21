@@ -155,15 +155,14 @@
         android:id="@+id/pomnoz"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="124dp"
         android:text="x"
         app:backgroundTint="#FFC89191"
         app:layout_constraintBottom_toTopOf="@+id/wynik"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toEndOf="@+id/b9"
-        app:layout_constraintTop_toBottomOf="@+id/rownanie"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
 
     <Button
         android:id="@+id/b9"
