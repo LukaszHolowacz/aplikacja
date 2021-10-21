@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         var liczbaPierwsza=0
         var liczbaDruga=0
         var wynik=0
+        var dzialanie=0
         findViewById<TextView>(R.id.rownanie).text =""
 
         findViewById<Button>(R.id.b0).setOnClickListener {
@@ -62,24 +63,40 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.rownanie).text.toString() + "9 "
         }
         findViewById<Button>(R.id.dodaj).setOnClickListener {
+            dzialanie = 1
             liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
             findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.odejmij).setOnClickListener {
+            dzialanie = 2
             liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
             findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.podziel).setOnClickListener {
+            dzialanie = 3
             liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
             findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.podziel).setOnClickListener {
+            dzialanie = 4
             liczbaPierwsza = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
             findViewById<TextView>(R.id.rownanie).text = ""
         }
         findViewById<Button>(R.id.wynik).setOnClickListener {
             liczbaDruga = findViewById<TextView>(R.id.rownanie).text.toString().toInt()
-            findViewById<TextView>(R.id.rownanie).text = ""
+            if(dzialanie == 1){
+                wynik = liczbaPierwsza + liczbaDruga
+            }
+            else if(dzialanie == 2){
+                wynik = liczbaPierwsza - liczbaDruga
+            }
+            else if(dzialanie == 3){
+                wynik = liczbaPierwsza / liczbaDruga
+            }
+            else if(dzialanie == 4){
+                wynik = liczbaPierwsza * liczbaDruga
+            }
+            findViewById<TextView>(R.id.rownanie).text = wynik.toString()
         }
     }
 }
