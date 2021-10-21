@@ -12,7 +12,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:text="C"
-        android:textColor="#DF3E3E"
+        android:textColor="#DD4848"
         android:textSize="34sp"
         app:backgroundTint="#A6A1A1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -175,8 +175,8 @@
         app:backgroundTint="#FFC89191"
         app:layout_constraintBottom_toTopOf="@+id/wynik"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
-        app:layout_constraintStart_toEndOf="@+id/b9"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.696" />
 
